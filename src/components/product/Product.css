@@ -1,0 +1,110 @@
+.product .product-image {
+    background-color: var(--my-green);
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    border-radius: .5rem;
+}
+
+.product .hstack span {
+    font-size: 1rem;
+    color: rgb(245, 245, 245);
+    padding: .5rem 1rem;
+    font-weight: 450;
+}
+
+.product .related-product {
+    height: 250px;
+    aspect-ratio: 1 / .5;
+    margin: 1rem auto;
+    border-radius: .5rem;
+    background-color: var(--my-green);
+}
+
+.product .best_seller {
+    margin: 2.5rem;
+}
+
+.product .carousel-indicators {
+    display: none;
+}
+
+.product .carousel-caption {
+    color: white;
+}
+
+.product .carousel-control-next {
+    margin-right: 25%;
+}
+
+.product .carousel-control-prev {
+    margin-left: 25%;
+}
+
+.product .carousel-caption .prices h4 {
+    margin-inline: .5rem;
+}
+
+.product .carousel-caption .prices .old-price {
+    color: var(--my-dark-blue);
+    font-weight: 600;
+}
+
+.product .lead span {
+    font-size: 2rem;
+    font-weight: 550;
+}
+
+.product form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    position: relative;
+}
+
+.product form .form-group label {
+    margin-inline: 1rem;
+}
+
+.product form button {
+    background-color: var(--my-dark-green);
+    font-weight: 550;
+    color: white;
+    transition: .25s all ease-in-out;
+    width: 100px;
+}
+
+.product form .cart-btn {
+    position: absolute;
+    right: 2rem;
+}
+
+.product form button:hover {
+    background-color: var(--my-green);
+    color: white;
+    border-radius: 25px;
+}
+
+.product .product-description {
+    background-color: white;
+    width: 90%;
+    padding: 1rem;
+    color: black !important;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
+    text-align: start;
+}
+
+.product .lead p {
+    font-size: 1.2rem;
+}
+
+.product .lead span {
+    display: inline;
+    margin-inline-end: 1rem;
+    font-size: 1.5rem;
+}
+
+.product .sale-price {
+    color: rgb(225, 25, 25);
+}

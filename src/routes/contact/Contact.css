@@ -1,0 +1,45 @@
+.contact {
+    margin: 30px;
+    padding: 70px;
+}
+
+.contact .container .card-body {
+    padding: 2.5rem 2rem;
+}
+
+.contact .main-heading{
+    color:red;
+    font-size: 1.75rem;
+    margin: 0 auto;
+}
+
+.contact .col-md-6 {
+    text-align: start;
+}
+
+.contact .col-md-6 h3 {
+    text-align: center;
+}
+
+.contact form input,
+.contact form textarea {
+    margin: .5rem auto;
+}
+
+.contact form button {
+    width: 40% !important;
+    margin: 1rem 30%;
+    transition: .25s all ease-in-out;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+    border-radius: 25px;
+}
+
+.contact .contact-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

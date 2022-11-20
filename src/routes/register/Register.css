@@ -1,0 +1,95 @@
+:root {
+    --my-dark-blue: rgb(25, 45, 120);
+    --my-blue: rgb(45, 85, 160);
+    --my-green: rgb(45, 200, 145);
+    --my-dark-green: rgb(25, 150, 105);
+    --my-orange: rgb(255, 160, 40);
+}
+
+.register-page .container {
+    margin: 5rem auto;
+    display: grid;
+    background-color: var(--my-blue);
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+    padding: 1.5rem 0;
+}
+
+.register-page .container h1 {
+    margin: 25px;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, .25);
+    font-size: 48px;
+    text-transform: uppercase;
+    font-family: 'News Cycle', sans-serif;
+    color: white;
+}
+
+.register-page form {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    grid-row: 2 / 4;
+    align-items: flex-start;
+    width: 45%;
+    margin: 35px auto;
+    /* background-color: white; */
+    padding: .5rem 2rem;
+    border-radius: 20px;
+    /* box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, .25); */
+    /* transition: .5s all ease-in-out; */
+}
+
+/* .register-page form:hover {
+    transform: scale(1.025);
+}
+
+.register-page form:focus {
+    transform: scale(1.025);
+} */
+
+.register-page .container .form-label {
+    font-size: 1rem;
+    font-weight: 550;
+    margin-top: 5px;
+}
+
+.register-page .container .form-control {
+    margin: 0 auto 5px auto;
+}
+
+.register-page form > button {
+    margin: 20px auto;
+    border-radius: 25px;
+    border: 1px solid var(--my-dark-green);
+    width: 120px;
+    padding: .35rem .5rem;
+    transition: .25s all ease-in-out;
+    background-color: var(--my-dark-green);
+}
+
+.register-page form > button:hover,
+.register-page form > button:focus {
+    transform: scale(.95);
+    background-color: var(--my-green);
+    border: 1px solid var(--my-green);
+}
+
+.login-link {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin: 0 auto 1.5rem auto;
+}
+.login-link a:link,
+.login-link a:visited {
+    text-decoration: underline;
+    color: var(--my-green);   
+}
+
+.login-link a:hover {
+    color: var(--my-orange);
+}
+
+.login-link > p {
+    margin: auto 10px;
+}

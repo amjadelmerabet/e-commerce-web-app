@@ -1,0 +1,10 @@
+.product {
+    color: white;
+}
+
+.product .product-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 450px;
+}

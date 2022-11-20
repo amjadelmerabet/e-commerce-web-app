@@ -1,0 +1,46 @@
+.top-header img {
+	height: 36px;
+	margin-left: 25px;
+}
+
+.top-header {
+    height: auto;
+}
+
+.top-navbar-button {
+	border-radius: 10px;
+	font-size: 14px;
+	margin: auto 5px;
+}
+
+#app-name {
+	margin: auto 10px;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+}
+
+.top-header nav {
+    margin: 0;
+}
+
+.top-header .container-fluid {
+    height: 40px;
+}
+
+.top-header .navbar-nav {
+	width: 100%;
+	text-align: center;
+}
+
+.top-header a:link {
+	text-decoration: none;
+	color: white;
+}
+
+.top-header a:visited {
+	color: white;
+}
+
+.top-header a:hover {
+	color: rgb(45, 255, 200);
+}

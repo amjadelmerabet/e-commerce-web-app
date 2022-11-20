@@ -1,0 +1,57 @@
+.admin {
+    margin: 5rem 2.5rem;
+}
+
+.admin .container {
+    background-color: var(--my-blue);
+    border-radius: 1rem;
+    margin: 2.5rem auto;
+    padding: 2rem;
+}
+
+.admin h2 {
+    color: white;
+}
+
+.admin form {
+    width: 36%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.admin form .form-label {
+    color: white;
+    margin-top: 1rem;
+    margin-left: .5rem;
+    font-size: 1.125rem;
+}
+
+.admin form .form-control {
+    color: black;
+}
+
+.admin form > button {
+    margin: 2rem auto;
+    width: 160px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    background-color: var(--my-green);
+    border: 1px solid var(--my-green);
+    transition: .25s all ease-in-out;
+}
+
+.admin form > button:hover,
+.admin form > button:focus {
+    transform: scale(.98);
+    background-color: var(--my-dark-green);
+    border: 1px solid var(--my-dark-green);
+    box-shadow: none;
+    outline: none;
+}
+
+.admin .file-input input {
+    margin: .5rem 0;
+    color: white;
+}

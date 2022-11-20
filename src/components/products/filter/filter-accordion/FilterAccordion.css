@@ -1,0 +1,85 @@
+:root {
+    --my-dark-blue: rgb(25, 45, 120);
+    --my-blue: rgb(45, 85, 160);
+    --my-green: rgb(45, 200, 145);
+    --my-dark-green: rgb(25, 150, 105);
+}
+
+.filter-accordion .accordion-body {
+    padding: 2.5%;
+    background: none;
+    background-color: var(--my-dark-blue);
+    color: white;
+    transition: .5s all ease-in-out;
+}
+
+
+@media (max-width: 575.99px) {
+    .filter-accordion .accordion-body {
+        padding: 1%;
+    }
+}
+
+.filter-accordion .accordion:not(.filter-accordion .accordion .accordion) {
+    border-radius: 0 !important;
+    background: none;
+    margin: 1rem 0;
+}
+
+.filter-accordion .accordion-button {
+    font-weight: 550;
+    background-color: var(--my-dark-blue);
+    color: white;
+    border-radius: 0;
+}
+
+.filter-accordion .accordion-button:hover {
+    background-color: var(--my-blue);
+    color: white;
+    box-shadow: none;
+}
+
+.filter-accordion .accordion-button[aria-expanded="true"] {
+    background-color: var(--my-blue);
+    color: white;
+}
+
+.filter-accordion .accordion-button.collapsed {
+    border: 2px solid white;
+    margin: .5rem 0;
+    border-radius: 0;
+}
+
+.filter-accordion .accordion-button:not(.collapsed) {
+    border: 2px solid white;
+}
+
+.filter-accordion .accordion-button > button {
+    color: white;
+}
+
+.filter-accordion .accordion-header {
+    border-radius: 0;
+}
+
+.filter-accordion .filter-accordion-list {
+    border: none;
+    background-color: var(--my-dark-blue);
+}
+
+.filter-accordion .filter-accordion-list > .list-group-item {
+    padding: .75rem .5rem !important;
+    border: 2px solid var(--my-green);
+    margin: .25rem 0;
+    background-color: var(--my-dark-blue);
+    color: white;
+    font-weight: 550;
+}
+
+.filter-accordion .filter-accordion-list > .list-group > .list-group-item {
+    border: none;
+}
+
+.filter-accordion .list-group {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .1);
+}

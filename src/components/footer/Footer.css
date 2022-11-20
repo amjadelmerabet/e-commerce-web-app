@@ -1,0 +1,50 @@
+.footer .bg-dark {
+    color: white;
+}
+
+.footer h5 {
+    color: rgb(45, 180, 120);
+    font-weight: 550;
+    text-shadow: 2.5px 2.5px 10px rgba(255, 255, 255, .25);
+}
+
+.footer .col-12 {
+    text-align: start;
+}
+
+.footer .col2 a:link {
+    width: auto;
+    color: white;
+    text-decoration: none;
+}
+
+.footer .col2 a:visited {
+    color: white;
+}
+
+.footer .col2 a:hover {
+    color: rgb(45, 180, 120);
+}
+
+.footer .list-unstyled {
+    margin: 25px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .list-unstyled > li {
+    margin: 5px auto;
+}
+
+.footer form {
+    color: white;
+}
+
+.footer form > button {
+    transform: uppercase;
+}
+
+.footer .footer-paragraph {
+    margin: 1.5rem;
+    color: white;    
+}

@@ -1,0 +1,107 @@
+:root {
+    --my-dark-blue: rgb(25, 45, 120);
+    --my-blue: rgb(45, 85, 160);
+    --my-green: rgb(45, 200, 145);
+    --my-dark-green: rgb(25, 150, 105);
+    --my-orange: rgb(255, 160, 40);
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+}
+
+.login-page .container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 5rem auto;
+    align-items: center;
+    background: var(--my-blue);
+    height: 60vh;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+}
+
+.login-page .container h1 {
+    margin: 25px;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, .25);
+    font-size: 48px;
+    text-transform: uppercase;
+    font-family: 'News Cycle', sans-serif;
+    color: white;
+}
+
+.login-page form {
+    display: flex;
+    flex-direction: column;
+    grid-row: 2 / 4;
+    align-items: flex-start;
+    width: 35%;
+    margin: 35px auto;
+    padding: 20px 50px;
+    border-radius: 20px;
+    /* transition: .5s all ease-in-out; */
+}
+
+@media (max-width: 575.98px) {
+    .login-page .container {
+        margin: 2.5rem 1rem;
+    }
+    .login-page form {
+        width: 100%;
+    }
+}
+
+/* .login-page form:hover {
+    transform: scale(1.05);
+}
+
+.login-page form:focus {
+    transform: scale(1.025);
+} */
+
+.login-page .form-label {
+    font-weight: 550;
+    font-size: 1rem;
+    margin-top: 10px;
+    color: white;
+}
+
+.login-page .form-control {
+    width: 100%;
+}
+
+.login-page form > button {
+    margin: 20px auto;
+    border-radius: 25px;
+    width: 120px;
+    padding: .35rem .5rem;
+    transition: .25s all ease-in-out;
+    background-color: var(--my-dark-green);
+    border: 1px solid var(--my-dark-green);
+}
+
+.login-page form > button:hover {
+    transform: scale(.95);
+    background-color: var(--my-green);
+    border: 1px solid var(--my-green);
+}
+
+.register-link {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.register-link a:link,
+.register-link a:visited {
+    text-decoration: underline;
+    color: var(--my-green);
+}
+
+.register-link a:hover {
+    color: var(--my-orange);
+}
+
+.register-link > p {
+    margin: auto 10px;
+}

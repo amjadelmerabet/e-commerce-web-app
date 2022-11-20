@@ -1,0 +1,103 @@
+.all-services  {
+    padding: 0;
+}
+
+.all-services .service {
+    position: relative;
+}
+
+.all-services .service img {
+    width: 60%;
+    height: 425px;
+    display: block;
+    margin: auto;
+}
+
+.all-services .services {
+    display: grid;
+    justify-content: flex-end;
+    position: absolute;
+    width: 40%;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+
+.all-services .services h2 {
+    color: white;
+    text-transform: capitalize;
+    margin: 1rem 0;
+}
+
+.all-services .child-name {
+    display: flex;
+    gap: 5px;
+}
+
+.all-services .child-name a:link {
+    text-decoration: none;
+    font-weight: 550;
+}
+
+.all-services .child-name .input-child {
+    display: block;
+    padding: .8rem 1.5rem;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    border-radius: .5rem;
+    transition: .25s all ease-in-out;
+}
+
+.all-services .input-child:hover {
+    background-color: white;
+    color: var(--my-dark-blue);
+    transform: scale(.95);
+}
+
+.all-services .container-fluid {
+    width: 90%;
+}
+
+.all-services .remboursement {
+    background-color: white;
+    display: grid;
+    gap: 2px;
+    padding: 30px;
+    margin: 3rem auto;
+    border: 3px;
+}
+
+.all-services .hamada  {
+    border-radius: .5rem;
+    margin: .5rem;
+    aspect-ratio: 1 / .75;
+    padding: .25rem;
+    transition: .25s all ease-in-out;
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, .25);
+}
+
+.all-services .hamada:hover {
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .25);
+    transform: scale(1.05);
+}
+
+.all-services .e b  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: .5rem;
+}
+
+.all-services .e p {
+    font-size: .9rem;
+    margin: 1rem .5rem;
+}
+
+.all-services .hamada svg  {
+    font-size: 3rem;
+    color: gold;
+    display: inline-block;
+    margin: 1rem;
+}

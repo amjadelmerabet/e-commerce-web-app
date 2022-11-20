@@ -1,0 +1,113 @@
+.wishlist {
+    margin: 1rem;
+    display: grid;
+}
+
+.wishlist h1 {
+    margin: 2rem;
+    color: white;
+}
+
+.wishlist > .row {
+    width: 80%;
+}
+
+.wishlist .product-card {
+    width: 90%;
+    height: 80%;
+    border: none;
+    background: none;
+}
+
+@media (max-width: 768px) {
+    .wishlist .product-card {
+        aspect-ratio: 1 / 1;
+        width: 100%;
+        border: none;
+    }
+}
+
+.wishlist > .row {
+    margin: auto;
+}
+
+.wishlist > .row .col-lg-3,
+.wishlist > .row .col-md-6,
+.wishlist > .row .col-sm-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wishlist .card-body {
+    background-color: var(--my-green);
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .25);
+    transition: .5s;
+}
+
+.wishlist .products .card-body:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.wishlist .card-body > .btn-success {
+    visibility: hidden;
+    width: 50px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    margin: auto 10px;
+    animation: fade-out 5s forwards;
+}
+
+.wishlist .card-body:hover .btn-success {
+    visibility: visible;
+    animation: fade-in 1s forwards;
+}
+
+.wishlist .card-footer {
+    margin: 20px 0;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .25);
+    background-color: rgb(250, 250, 250);
+}
+
+.wishlist .product-card button {
+    transition: .25s all ease-in-out;
+}
+
+.wishlist .product-card button:hover {
+    transform: scale(.9);
+}
+
+.wishlist .product-card img {
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+}

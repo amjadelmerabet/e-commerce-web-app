@@ -1,0 +1,81 @@
+.products-search-bar .row {
+    width: 100%;
+    background: none;
+}
+
+.products-search-bar .col-sm-12,
+.products-search-bar .col-md-4 {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-item {
+    color: white;
+    font-weight: 600;
+}
+
+@media (max-width: 575.99px) {
+    .mx-0 {
+        padding: 0;
+    }
+}
+
+.breadcrumb-item:hover {
+    color: var(--my-green);
+}
+
+.breadcrumb-item.active {
+    color:var(--my-green);
+}
+
+.breadcrumb-item a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.breadcrumb-item a:visited {
+    color: white;
+}
+
+.breadcrumb a:hover {
+    color: var(--my-green);
+}
+
+ol.breadcrumb {
+    margin: 20px auto;
+}
+
+.products-search-bar .col-sm-12 .d-flex,
+.products-search-bar .col-md-4 .d-flex {
+    width: 100%;
+}
+
+.products-search-bar .d-flex .form-control {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+    transition: .75s;
+}
+
+.products-search-bar .d-flex .form-control:hover,
+.products-search-bar .d-flex .form-control:focus {
+    transform: scale(1.10);
+}
+
+.sort-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 575.99px) {
+    .sort-button {
+        justify-content: center;
+        margin: 20px auto;
+    }
+}
+
+.products-search-bar .form-select {
+    width: 40%;
+    border-radius: 25px;
+    font-weight: 550;
+}

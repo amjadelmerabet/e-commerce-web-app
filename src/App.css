@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+:root {
+  --my-dark-blue: rgb(25, 45, 120);
+}
+
+* {
+  font-family: 'Poppins', 'Open Sans', sans-serif;
+}
+
 .App {
   text-align: center;
+  background-color: var(--my-dark-blue);
 }
 
 .App-logo {

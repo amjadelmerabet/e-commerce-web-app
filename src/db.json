@@ -1,0 +1,476 @@
+{
+    "appInfos": {
+        "appName": "The Shopping Deal",
+        "appDescription": "An eCommerce web app"
+    },
+    "header": {
+        "topHeader": {
+            "logo": {
+                "id": 0,
+                "file": "../../logo.svg"
+            },
+            "socialMediaLinks": [
+                {
+                    "id": 0,
+                    "label": "Facebook",
+                    "url": "https://www.facebook.com/"
+                },
+                {
+                    "id": 1,
+                    "label": "Instagram",
+                    "url": "https://www.instagram.com/"
+                },
+                {
+                    "id": 2,
+                    "label": "Twitter",
+                    "url": "https://www.twitter.com/"
+                },
+                {
+                    "id": 3,
+                    "label": "Youtube",
+                    "url": "https://www.youtube.com/"
+                }
+            ],
+            "buttons": [
+                {
+                    "id": 0,
+                    "label": "Sign in"
+                },
+                {
+                    "id": 1,
+                    "label": "Sign up"
+                }
+            ]
+        },
+        "bottomHeader": {
+            "form": {
+                "select": {
+                    "id": 0,
+                    "default": "All Categories",
+                    "options": [
+                        {
+                            "id": 0,
+                            "label": "SuperMarket"
+                        },
+                        {
+                            "id": 1,
+                            "label": "Clothes"
+                        },
+                        {
+                            "id": 2,
+                            "label": "Electronics"
+                        },
+                        {
+                            "id": 3,
+                            "label": "Beauty"
+                        }
+                    ]
+                },
+                "search": {
+                    "id": 1,
+                    "placeholder": "Search ..."
+                },
+                "searchButton": {
+                    "id": 2,
+                    "label": "Search"
+                } 
+            },
+            "navigationMenu": [
+                {
+                    "id": 0,
+                    "label": "Home",
+                    "link": "/"
+                },
+                {
+                    "id": 1,
+                    "label": "Products",
+                    "link": "/products/all"
+                },
+                {
+                    "id": 2,
+                    "label": "Services",
+                    "link": "/services"
+                },
+                {
+                    "id": 3,
+                    "label": "About",
+                    "link": "/about"
+                },
+                {
+                    "id": 4,
+                    "label": "Contact",
+                    "link": "/contact"
+                }
+            ]
+        }
+    },
+    "body": {
+        "home": {
+
+        },
+        "products": {
+            "filterTab": {
+                "id": 0,
+                "filters": [
+                    {
+                        "id": 0,
+                        "label": "Categories",
+                        "elements": {
+                            "id": 0,
+                            "withSubcategories": true,
+                            "options": [
+                                {
+                                    "id": 0,
+                                    "label": "SuperMarket",
+                                    "subcategories": [
+                                        {
+                                            "id": 0,
+                                            "label": "Fruits"
+                                        },
+                                        {
+                                            "id": 1,
+                                            "label": "Vegetables"
+                                        },
+                                        {
+                                            "id": 2,
+                                            "label": "Bread"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 1,
+                                    "label": "Clothes",
+                                    "subcategories": [
+                                        {
+                                            "id": 0,
+                                            "label": "T-Shirts"
+                                        },
+                                        {
+                                            "id": 1,
+                                            "label": "Shirts"
+                                        },
+                                        {
+                                            "id": 2,
+                                            "label": "Pants"
+                                        },
+                                        {
+                                            "id": 3,
+                                            "label": "Shoes"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 2,
+                        "label": "Prices",
+                        "elements": {
+                            "id": 0,
+                            "withSubcategories": false,
+                            "options": [
+                                {
+                                    "id": 0,
+                                    "label": "Less than 25$",
+                                    "min": 0,
+                                    "max": 25
+                                },
+                                {
+                                    "id": 1,
+                                    "label": "Wihtin 25$ and 75$",
+                                    "min": 25,
+                                    "max": 75
+                                },
+                                {
+                                    "id": 2,
+                                    "label": "More than 75$",
+                                    "min": 75,
+                                    "max": 0
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 1,
+                        "label": "Brands",
+                        "elements": {
+                            "id": 0,
+                            "withSubcategories": false,
+                            "options": [
+                                {
+                                    "id": 0,
+                                    "label": "Brand 1"
+                                },
+                                {
+                                    "id": 1,
+                                    "label": "Brand 2"
+                                },
+                                {
+                                    "id": 2,
+                                    "label": "Brand 3"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 3,
+                        "label": "Clients Ratings",
+                        "elements": {
+                            "id": 0,
+                            "withSubcategories": false,
+                            "options": [
+                                {
+                                    "id": 0,
+                                    "label": "⭐⭐⭐⭐⭐"
+                                },
+                                {
+                                    "id": 1,
+                                    "label": "⭐⭐⭐⭐"
+                                },
+                                {
+                                    "id": 2,
+                                    "label": "⭐⭐⭐"
+                                },
+                                {
+                                    "id": 3,
+                                    "label": "⭐⭐"
+                                },
+                                {
+                                    "id": 4,
+                                    "label": "⭐"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "productsList": {
+                "id": 1,
+                "products": [
+                    {
+                        "id": 0,
+                        "name": "Apples",
+                        "price": 2.5,
+                        "category": "Fruits",
+                        "offer": false,
+                        "newPrice": null
+                    },
+                    {
+                        "id": 1,
+                        "name": "Bananas",
+                        "price": 3.65,
+                        "category": "Fruits",
+                        "offer": true,
+                        "newPrice": 2.99
+                    },
+                    {
+                        "id": 10,
+                        "image": "",
+                        "name": "Potatoes",
+                        "price": 2.99,
+                        "category": "Vegetables",
+                        "offer": false,
+                        "newPrice": null
+                    },
+                    {
+                        "id": 11,
+                        "image": "",
+                        "name": "Cabbage",
+                        "price": 4.49,
+                        "category": "Vegetables",
+                        "offer": false,
+                        "newPrice": null
+                    },
+                    {
+                        "id": 14,
+                        "image": "",
+                        "name": "Multigrain Bread",
+                        "price": 5.99,
+                        "category": "Bread",
+                        "offer": false,
+                        "newPrice": null
+                    },
+                    {
+                        "id": 2,
+                        "image": "../../assets/images/oranges.jpg",
+                        "name": "Oranges",
+                        "price": 2.49,
+                        "category": "Fruits",
+                        "offer": false,
+                        "newPrice": null
+                    },
+                    {
+                        "id": 3,
+                        "image": "../../assets/images/pears.jpg",
+                        "name": "Pears",
+                        "price": 5.59,
+                        "category": "Fruits",
+                        "offer": false,
+                        "newPrice": null
+                    },
+                    {
+                        "id": 4,
+                        "image": "../../assets/images/grapes.jpg",
+                        "name": "Grapes",
+                        "price": 2.89,
+                        "category": "Fruits",
+                        "offer": false,
+                        "newPrice": null
+                    },
+                    {
+                        "id": 5,
+                        "image": "../../assets/images/pineapple.jpg",
+                        "name": "Pineapples",
+                        "price": 5.69,
+                        "category": "Fruits",
+                        "offer": false,
+                        "newPrice": null
+                    },
+                    {
+                        "id": 6,
+                        "image": "../../assets/images/mango.jpg",
+                        "name": "Mangos",
+                        "price": 7.99,
+                        "category": "Fruits",
+                        "offer": true,
+                        "newPrice": 6.49
+                    },
+                    {
+                        "id": 7,
+                        "image": "../../assets/images/watermelon.jpg",
+                        "name": "Watermelons",
+                        "price": 9.99,
+                        "category": "Fruits",
+                        "offer": false,
+                        "newPrice": null
+                    },
+                    {
+                        "id": 8,
+                        "image": "",
+                        "name": "Tomatoes",
+                        "price": 4.99,
+                        "category": "Vegetables",
+                        "offer": false,
+                        "newPrice": null
+                    },
+                    {
+                        "id": 9,
+                        "image": "",
+                        "name": "Onions",
+                        "price": 11.99,
+                        "category": "Vegetables",
+                        "offer": false,
+                        "newPrice": null
+                    },
+                    {
+                        "id": 13,
+                        "image": "",
+                        "name": "White Bread",
+                        "price": 2.99,
+                        "category": "Bread",
+                        "offer": false,
+                        "newPrice": null
+                    },
+                    {
+                        "id": 15,
+                        "image": "",
+                        "name": "Wheat Bread",
+                        "price": 6.49,
+                        "category": "Bread",
+                        "offer": false,
+                        "newPrice": null
+                    },
+                    {
+                        "id": 16,
+                        "image": "",
+                        "name": "Blue Jeans",
+                        "price": 120,
+                        "category": "Pants",
+                        "offer": true,
+                        "newPrice": 105
+                    },
+                    {
+                        "id": 17,
+                        "image": "",
+                        "name": "Black Jeans",
+                        "price": 85,
+                        "category": "Pants",
+                        "offer": false,
+                        "newPrice": null
+                    }
+                ]
+            }
+        },
+        "product": {
+
+        },
+        "cart": {
+            "cart-items": [
+                {
+                    "id": 0,
+                    "name": "Apples",
+                    "price": 4.49,
+                    "quantity": 1
+                },
+                {
+                    "id": 1,
+                    "name": "Phone Battery",
+                    "price": 5.99,
+                    "quantity": 1
+                },
+                {
+                    "id": 2,
+                    "name": "Headphones",
+                    "price": 19.99,
+                    "quantity": 1
+                }
+            ]
+        }
+    },
+    "footer": {
+        "id": 0,
+        "columns": [
+            {
+                "id": 0
+            },
+            {
+                "id": 1,
+                "elements": [
+                    {
+                        "id": 0,
+                        "label": "Home",
+                        "link": "/"
+                    },
+                    {
+                        "id": 1,
+                        "label": "Products",
+                        "link": "/products"
+                    },
+                    {
+                        "id": 2,
+                        "label": "Services",
+                        "link": "/services"
+                    },
+                    {
+                        "id": 3,
+                        "label": "Refund",
+                        "link": "/refund"
+                    },
+                    {
+                        "id": 4,
+                        "label": "About",
+                        "link": "/about"
+                    },
+                    {
+                        "id": 5,
+                        "label": "Contact",
+                        "link": "/contact"
+                    }
+                ]
+            },
+            {
+                "id": 2
+            }
+        ]
+    }
+}

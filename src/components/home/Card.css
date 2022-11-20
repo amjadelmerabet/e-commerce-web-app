@@ -1,0 +1,129 @@
+/* *{
+    padding:0;
+    margin:0;
+} */
+
+:root {
+    --my-dark-blue: rgb(25, 45, 120);
+    --my-blue: rgb(45, 85, 160);
+    --my-green: rgb(45, 200, 145);
+    --my-dark-green: rgb(25, 150, 105);
+}
+
+.card-component .carde_container{
+    height: 60vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* background-color: var(--my-green); */
+    background-color: var(--my-green);
+}
+
+.card-component .carde{
+    width:1400px;
+    min-height:500px;
+    border-radius:14px;
+    padding:7px;
+    position:relative;
+    background-color:var(--my-blue);
+    font-size: 30px;
+    margin: 5rem auto;
+}
+
+.card-component .carde .carde-container{
+    width:100%;
+    height:100%;
+    position:relative;
+    background-color:#fff;
+    z-index:10;
+    border-radius:10px;
+    padding:15px;
+    padding-top:50px;    
+}
+
+.card-component .carde-container h4{
+    
+    margin-bottom:10px;
+}
+
+.card-component .carde p {
+    font-size: 24px;
+}
+
+.card-component .carde::after{
+    position:absolute;
+    content:attr(data-label);
+    top: 2.25rem;
+    padding-left:20px;
+    padding:10px;
+    left: 10%;
+    width:20rem;
+    background-color:var(--my-dark-blue);
+    z-index:12;
+    border-bottom-left-radius:20px;
+    border-top-left-radius:20px;
+    border-top-right-radius:10px;
+    color:#fff;
+    height:4rem;
+}
+
+.card-component .containerS {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.card-component .containerS .hover-buttonS {
+    height: 80px;
+    width: 250px;
+    border: none;
+    font-size: 26px;
+    border-radius: 0 35px;
+    background-image: linear-gradient(to right top, var(--my-green), var(--my-blue));
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.25s
+}
+
+.card-component .containerS .hover-buttonS:hover {
+    height: 80px;
+    width: 400px;
+    border: none;
+    border-radius: 35px 0;
+    background-image: linear-gradient(to right top, var(--my-green), var(--my-blue));
+    cursor: pointer;
+}
+
+.card-component .containerS .hover-buttonS a:link,
+.card-component .containerS .hover-buttonS a:visited {
+    text-decoration: none;
+    color: var(--my-dark-blue);
+    font-weight: 500;
+    color: white;
+}
+
+@media (max-width: 765px) {
+    .card-component .carde::after {
+        font-size: 1.5rem;
+    }
+
+    .card-component .carde {
+        width: 95%;
+        margin-inline: .5rem;
+    }
+
+    .card-component .carde p {
+        font-size: 16px;
+        padding: 0 .5rem;
+    }
+    .card-component .containerS .hover-buttonS {
+        font-size: 20px;
+        transform: scale(.65);
+    }
+    .card-component .carde::after {
+        right: -4%;
+        transform: scale(.8);
+    }
+}

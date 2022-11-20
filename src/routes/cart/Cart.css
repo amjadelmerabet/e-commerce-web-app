@@ -1,0 +1,117 @@
+.cart {
+    margin: 5rem 2.5rem;
+}
+
+.cart h1 {
+    color: white;
+}
+
+.cart .items-list {
+    background-color: var(--my-green);
+    margin: 2.5rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .25);
+}
+
+.cart .items-list tr {
+    color: white;
+    transition: .2s all ease-in-out;
+}
+
+.cart .items-list tr:hover {
+    box-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, .25);
+    transform: scale(1.025);
+}
+
+.cart .items-list tr > td {
+    padding: .5rem 1rem;
+}
+
+.cart .items-list tr:nth-child(odd) {
+    background-color: var(--my-dark-green);
+}
+
+.cart .items-list tr:nth-child(even) {
+    background-color: var(--my-green);
+}
+
+
+.cart .items-list tr > .item-name {
+    width: 70%;
+    text-align: start;
+}
+
+.cart .remove-button {
+    background-color: rgb(225, 25, 60);
+}
+
+.cart .remove-button:hover {
+    background-color: rgb(200, 0, 45);
+}
+
+.cart .form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.cart .cart-summary {
+    background-color: var(--my-blue);
+    color: white;
+    min-height: 250px;
+    margin-top: 25px;
+    width: 80%;
+    margin-inline: auto;
+    border-radius: .5rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .25);
+    padding: 1rem 0 2rem 0;
+}
+
+.cart .cart-summary h3 {
+    position: relative;
+    padding-top: 1rem;
+}
+
+.cart .cart-summary .summary-table {
+    width: 85%;
+    margin: 1rem 2rem;
+    border: 2px solid var(--my-dark-green);
+}
+
+.cart .cart-summary .summary-table tr {
+    color: white;
+    transition: .2s all ease-in-out;
+}
+
+.cart .cart-summary .summary-table tr:nth-child(odd) {
+    background-color: var(--my-blue);
+}
+
+.cart .cart-summary .summary-table tr:nth-child(even) {
+    background-color: var(--my-dark-blue);
+}
+
+.cart .cart-summary .summary-table tr > td {
+    padding: .5rem 1rem;
+}
+
+.cart .cart-summary .summary-table .item {
+    width: 60%;
+    text-align: start;
+}
+
+.cart .cart-summary .summary-table .price {
+    width: 40%;
+    text-align: end;
+    font-weight: 550;
+}
+
+.cart .cart-summary .total {
+    display: flex;
+    justify-content: flex-start;
+    background-color: var(--my-dark-blue);
+    padding: .5rem;
+}
+
+.cart .cart-summary .total > div {
+    margin-left: 2.5rem;
+    font-size: 1.5rem;
+}

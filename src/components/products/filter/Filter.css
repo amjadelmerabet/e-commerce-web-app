@@ -1,0 +1,54 @@
+:root {
+    --my-dark-blue: rgb(25, 45, 120);
+    --my-blue: rgb(45, 85, 160);
+    --my-green: rgb(45, 200, 145);
+    --my-dark-green: rgb(25, 150, 105);
+}
+
+.list-group-item {
+    border-radius: 0!important;
+}
+
+.filter {
+    margin: 4rem auto .5rem auto;
+    padding: 0;
+    background-color: var(--my-dark-blue);
+    color: white;
+    box-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, .25);
+    border: 2px solid var(--my-green);
+    padding: .5rem;
+    border-radius: .5rem;
+    transition: .5s all ease-in-out;
+}
+
+.filter:hover,
+.filter:focus {
+    transform: scale(1.025);
+}
+
+.filter-header {
+    background-color: var(--my-green);
+    border-radius: .25rem;
+    color: white;
+}
+
+.filter-header h5 {
+    font-weight: 550;
+}
+
+.filter-header > .row > .col-6 > button {
+    background: none;
+    border-radius: 50px;
+    font-weight: 550;
+    color: white;
+}
+
+.filter-header > .row > .col-6 > button:hover {
+    background-color: var(--my-dark-green);
+    color: white;
+}
+
+.filter-header > .row > .col-6 > button:focus {
+    outline: none;
+    box-shadow: none;
+}

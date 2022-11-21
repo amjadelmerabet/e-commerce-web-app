@@ -1,0 +1,16 @@
+GET http://localhost:5000/products
+
+###
+
+POST http://localhost:5000/products
+Content-Type: application/json
+Access-Control-Allow-Origin: *
+
+{
+    "name": "Green T-shirt",
+    "price": 15.99,
+    "category": "T-shirts",
+    "description": "",
+    "offer": false,
+    "newPrice": 0
+}

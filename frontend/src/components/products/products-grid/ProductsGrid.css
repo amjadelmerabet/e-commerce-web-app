@@ -54,8 +54,8 @@
     margin: auto;
     padding: 0;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .25);
-    transition: .5s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    transition: 0.5s;
 }
 
 .products-grid .card-body:hover {
@@ -99,7 +99,7 @@
     border: none;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, .25);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
     background-color: rgb(250, 250, 250);
 }
 
@@ -114,19 +114,18 @@
     border: none;
     margin-inline: 1rem;
     width: 80px;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
     border-radius: 5rem;
     font-size: 120%;
-    transition: .25s all ease-in-out;
-    box-shadow: .25rem .25rem .5rem rgba(0, 0, 0, .25);
+    transition: 0.25s all ease-in-out;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
 }
 
 .products-grid .pages-buttons button:hover {
-    transform: scale(.95);
+    transform: scale(0.95);
 }
-
 
 .products-grid .pages-buttons button:focus {
     outline: none;
-    box-shadow: .25rem .25rem .5rem rgba(0, 0, 0, .25);
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
 }

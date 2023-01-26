@@ -1,32 +1,36 @@
-import React, { useEffect } from "react";
-import { Form, Stack, Carousel } from "react-bootstrap";
-import { useDispatch, useSelector } from "react-redux";
-import { AiOutlineShoppingCart, AiOutlineHeart } from "react-icons/ai";
+import React, { useEffect } from 'react';
+import { Form, Stack, Carousel } from 'react-bootstrap';
+import { useDispatch, useSelector } from 'react-redux';
+import { AiOutlineShoppingCart, AiOutlineHeart } from 'react-icons/ai';
 
-import { getProducts } from "../../actions/products";
+import { getProducts } from '../../actions/products';
 
-import "./Product.css";
+import './Product.css';
 
 // import data from "../datas/listproduits";
 
 function ProductDetails(props) {
-
     // Set Data to Local Storage
     const addProductToCart = () => {
-        const productData = { 
+        const productData = {
             id: props.product.id,
             name: props.product.name,
-            price: props.product.offer ? props.product.newPrice : props.product.price,
+            price: props.product.offer
+                ? props.product.newPrice
+                : props.product.price,
             category: props.product.category,
             descritpion: props.product.description,
-            type: "cart"
-        }
-        sessionStorage.setItem(JSON.stringify({id: props.product.id, name: "cart"}), JSON.stringify(productData));
-    }
+            type: 'cart',
+        };
+        sessionStorage.setItem(
+            JSON.stringify({ id: props.product.id, name: 'cart' }),
+            JSON.stringify(productData)
+        );
+    };
 
     // Set Data to Local Storage
     const addProductToWishList = () => {
-        const productData = { 
+        const productData = {
             id: props.product.id,
             name: props.product.name,
             price: props.product.price,
@@ -34,10 +38,13 @@ function ProductDetails(props) {
             descritpion: props.product.description,
             offer: props.product.offer,
             newPrice: props.product.newPrice,
-            type: 'wishlist'
-        }
-        sessionStorage.setItem(JSON.stringify({id: props.product.id, name: "wishlist"}), JSON.stringify(productData));
-    }
+            type: 'wishlist',
+        };
+        sessionStorage.setItem(
+            JSON.stringify({ id: props.product.id, name: 'wishlist' }),
+            JSON.stringify(productData)
+        );
+    };
 
     const dispatch = useDispatch();
 
@@ -91,19 +98,27 @@ function ProductDetails(props) {
                                         <h2> Description </h2>
                                         {/* <p>{props.product.description}</p> */}
                                         <p>
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, inventore saepe blanditiis adipisci neque distinctio, reiciendis, assumenda sequi illum laborum tenetur molestias repellendus aliquam sit.
+                                            Lorem ipsum dolor, sit amet
+                                            consectetur adipisicing elit.
+                                            Obcaecati, inventore saepe
+                                            blanditiis adipisci neque
+                                            distinctio, reiciendis, assumenda
+                                            sequi illum laborum tenetur
+                                            molestias repellendus aliquam sit.
                                         </p>
                                         <span className="mr-1">
                                             <del>
                                                 {props.product.offer
-                                                    ? props.product.price + "$"
+                                                    ? props.product.price + '$'
                                                     : null}
                                             </del>
                                         </span>
                                         <span className="sale-price">
                                             {props.product.offer
-                                                ? "Sale " + props.product.newPrice + "$"
-                                                : props.product.price + "$"}
+                                                ? 'Sale ' +
+                                                  props.product.newPrice +
+                                                  '$'
+                                                : props.product.price + '$'}
                                         </span>
                                     </p>
                                 </div>
@@ -123,7 +138,7 @@ function ProductDetails(props) {
                                         onClick={() => addProductToWishList()}
                                     >
                                         <i className="fa-solid fa-cart-shopping"></i>
-                                        <AiOutlineHeart size='24px' />
+                                        <AiOutlineHeart size="24px" />
                                     </button>
                                     <button
                                         className="btn btn-md mx-auto cart-btn"
@@ -131,7 +146,7 @@ function ProductDetails(props) {
                                         onClick={() => addProductToCart()}
                                     >
                                         <i className="fa-solid fa-cart-shopping"></i>
-                                        <AiOutlineShoppingCart size='24px' />
+                                        <AiOutlineShoppingCart size="24px" />
                                     </button>
                                 </Form>
                             </div>
@@ -152,39 +167,54 @@ function ProductDetails(props) {
                                 <div className="section_tittle text-center">
                                     <h3>
                                         {/* Best Sellers <span>shop</span> */}
-										Related Products
+                                        Related Products
                                     </h3>
                                 </div>
                             </div>
                         </div>
                         <Carousel>
-							{
-								products.filter(pr => pr.category === props.product.category).filter(pr => pr.name !== props.product.name).map(product => {
-									return (
-										<Carousel.Item>
-											<div className="best_product_slider ">
-												<div className="single_product_item">
-													<div className="related-product"></div>
-													{/* <img
+                            {products
+                                .filter(
+                                    (pr) =>
+                                        pr.category === props.product.category
+                                )
+                                .filter((pr) => pr.name !== props.product.name)
+                                .map((product) => {
+                                    return (
+                                        <Carousel.Item>
+                                            <div className="best_product_slider ">
+                                                <div className="single_product_item">
+                                                    <div className="related-product"></div>
+                                                    {/* <img
 													src={product.cover}
 													className="img-fluid img-thumbnail"
 													alt={product.name}
 												/> */}
-												</div>
-											</div>
-											<Carousel.Caption>
-												<div className="single_product_text">
-													<h3>{product.name}</h3>
-													<div className="prices">
-														<h4 className="old-price"><del>{product.offer ? product.price : null}</del></h4>
-														<h4 className="new-price">{product.offer ? product.newPrice : product.price}$</h4>
-													</div>
-												</div>
-											</Carousel.Caption>
-										</Carousel.Item>
-									)
-								})
-							}
+                                                </div>
+                                            </div>
+                                            <Carousel.Caption>
+                                                <div className="single_product_text">
+                                                    <h3>{product.name}</h3>
+                                                    <div className="prices">
+                                                        <h4 className="old-price">
+                                                            <del>
+                                                                {product.offer
+                                                                    ? product.price
+                                                                    : null}
+                                                            </del>
+                                                        </h4>
+                                                        <h4 className="new-price">
+                                                            {product.offer
+                                                                ? product.newPrice
+                                                                : product.price}
+                                                            $
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                            </Carousel.Caption>
+                                        </Carousel.Item>
+                                    );
+                                })}
                         </Carousel>
                     </div>
                 </section>

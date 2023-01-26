@@ -1,16 +1,16 @@
-import express from 'express'
+import express from 'express';
 
 // const app = express();
 
 // import Product from '../models/product.js'
 
-import { getProducts, createProduct } from '../controllers/products.js'
+import { getProducts, createProduct } from '../controllers/products.js';
 
-const router = express.Router()
+const router = express.Router();
 
-router.get('/products', getProducts)
+router.get('/products', getProducts);
 
-router.post('/products', createProduct)
+router.post('/products', createProduct);
 
 // router.get('/products', paginatedResults(Product), (response, request) => {
 //     response.json(response.paginatedResults)
@@ -45,9 +45,9 @@ router.post('/products', createProduct)
 //             response.paginatedResults = results
 //             next()
 //         } catch (error) {
-//             response.status(500).json({ message: error })            
+//             response.status(500).json({ message: error })
 //         }
 //     }
 // }
 
-export default router
+export default router;

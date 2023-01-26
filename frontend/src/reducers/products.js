@@ -1,12 +1,12 @@
 const ProductsReducer = (products = [], action) => {
-    switch(action.type) {
+    switch (action.type) {
         case 'FETCH_ALL':
             return action.payload;
         case 'CREATE':
-            return [ ...products, action.payload ];
+            return [...products, action.payload];
         default:
-            return products
+            return products;
     }
-}
+};
 
 export default ProductsReducer;

@@ -1,13 +1,13 @@
 .section-bg button {
     padding: 1rem 2.5rem;
     border: none;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     background-color: var(--my-blue);
-    box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, .25);
+    box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.25);
     color: white;
     font-weight: 550;
     margin: 2.5rem auto;
-    transition: .25s all ease-in-out;
+    transition: 0.25s all ease-in-out;
 }
 
 .section-bg button:hover {
@@ -35,7 +35,6 @@
 
 #clients {
     padding: 60px 0;
-    
 }
 #clients .clients-wrap {
     /* border-top: 1px solid #d6eaff;
@@ -62,8 +61,8 @@
     overflow: hidden;
     background: #fff;
     height: 160px;
-    border-radius: .5rem;
-    transition: .25s all ease-in-out;
+    border-radius: 0.5rem;
+    transition: 0.25s all ease-in-out;
 }
 
 #clients .client-logo:hover {

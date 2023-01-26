@@ -7,7 +7,7 @@
 
 .accordion .accordion-item .filter-accordion-list .list-group-item {
     background-color: var(--my-dark-blue);
-    padding: .25rem;
+    padding: 0.25rem;
 }
 
 .filter-sub-accordion-list {
@@ -20,7 +20,6 @@
 .filter-sub-accordion-list > .list-group-item {
     color: white;
     border: 1px solid white;
-    margin: .25rem 0;
-    padding: .75rem .5rem !important;
+    margin: 0.25rem 0;
+    padding: 0.75rem 0.5rem !important;
 }
-

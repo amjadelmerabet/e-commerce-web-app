@@ -3,12 +3,12 @@ import * as api from '../api';
 // Action Creators
 export const getUsers = () => async (dispatch) => {
     try {
-        const { data } = await api.fetchUsers(); 
+        const { data } = await api.fetchUsers();
         dispatch({ type: 'FETCH_ALL', payload: data });
     } catch (error) {
-        console.log(error)       
+        console.log(error);
     }
-}
+};
 
 export const createUser = (user) => async (dispatch) => {
     try {
@@ -17,4 +17,4 @@ export const createUser = (user) => async (dispatch) => {
     } catch (error) {
         console.log(error);
     }
-}
+};

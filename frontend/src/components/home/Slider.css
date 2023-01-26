@@ -12,11 +12,11 @@
 }
 
 .hero .carousel-indicators button {
-    height: .25rem;
+    height: 0.25rem;
     width: 3rem;
     aspect-ratio: 1 / 1;
-    margin-inline: .25rem;
-    opacity: .5;
+    margin-inline: 0.25rem;
+    opacity: 0.5;
     background-color: var(--my-blue);
 }
 
@@ -53,7 +53,7 @@
     .hero .carousel .carousel-control-prev {
         margin-left: 0;
     }
-    
+
     .hero .carousel .carousel-control-next {
         margin-right: 0;
     }
@@ -73,11 +73,11 @@
         aspect-ratio: 16 / 9;
         margin-inline: auto;
     }
-} 
+}
 
 .hero a {
     color: rgb(255, 255, 255);
-    text-decoration: none
+    text-decoration: none;
 }
 
 /* .hero body {
@@ -87,7 +87,7 @@
 .hero .brands {
     width: 100%;
     padding-top: 90px;
-    padding-bottom: 90px
+    padding-bottom: 90px;
 }
 
 .hero .brands_slider_container {
@@ -101,15 +101,15 @@
 
 .hero .brands_slider {
     height: 100%;
-    margin-top: 50px
+    margin-top: 50px;
 }
 
 .hero .brands_item {
-    height: 100%
+    height: 100%;
 }
 
 .hero .brands_item img {
-    max-width: 100%
+    max-width: 100%;
 }
 
 .hero .brands_nav {
@@ -121,7 +121,7 @@
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
     padding: 5px;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .hero .brands_nav i {
@@ -130,31 +130,30 @@
     -moz-transition: all 200ms ease;
     -ms-transition: all 200ms ease;
     -o-transition: all 200ms ease;
-    transition: all 200ms ease
+    transition: all 200ms ease;
 }
 
 .hero .brands_nav:hover i {
-    color: #676767
+    color: #676767;
 }
 
 .hero .brands_prev {
-    left: 40px
+    left: 40px;
 }
 
 .hero .brands_next {
-    right: 40px
+    right: 40px;
 }
-
 
 .hero .profile {
     width: 10%;
-    height: 350px
+    height: 350px;
 }
 
 .hero .percentage {
-    font-size: 30px
+    font-size: 30px;
 }
 
 .hero .testimonials {
-    height: 350px
+    height: 350px;
 }

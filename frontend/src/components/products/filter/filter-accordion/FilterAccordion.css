@@ -10,9 +10,8 @@
     background: none;
     background-color: var(--my-dark-blue);
     color: white;
-    transition: .5s all ease-in-out;
+    transition: 0.5s all ease-in-out;
 }
-
 
 @media (max-width: 575.99px) {
     .filter-accordion .accordion-body {
@@ -39,14 +38,14 @@
     box-shadow: none;
 }
 
-.filter-accordion .accordion-button[aria-expanded="true"] {
+.filter-accordion .accordion-button[aria-expanded='true'] {
     background-color: var(--my-blue);
     color: white;
 }
 
 .filter-accordion .accordion-button.collapsed {
     border: 2px solid white;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
     border-radius: 0;
 }
 
@@ -68,9 +67,9 @@
 }
 
 .filter-accordion .filter-accordion-list > .list-group-item {
-    padding: .75rem .5rem !important;
+    padding: 0.75rem 0.5rem !important;
     border: 2px solid var(--my-green);
-    margin: .25rem 0;
+    margin: 0.25rem 0;
     background-color: var(--my-dark-blue);
     color: white;
     font-weight: 550;
@@ -81,5 +80,5 @@
 }
 
 .filter-accordion .list-group {
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, .1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }

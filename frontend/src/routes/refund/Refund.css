@@ -6,7 +6,7 @@
     background-color: white;
 } */
 
-.shopping .homeimg{
+.shopping .homeimg {
     position: relative;
 }
 
@@ -15,44 +15,43 @@
     color: var(--my-green);
 }
 
-.shopping .homeimg img{
+.shopping .homeimg img {
     width: auto;
     height: 450px;
     margin-top: 2.5rem;
 }
 
-.shopping .homeimg .titlehome{
-     position: absolute;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     bottom: 0;
-     left: 50%;
-     transform: translate(-50%,-50%);
-     text-transform:uppercase;
-     color: orange;
-     background-color: white;
-     font-size: 25px;
-     padding: 10px;
+.shopping .homeimg .titlehome {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: orange;
+    background-color: white;
+    font-size: 25px;
+    padding: 10px;
 }
 
-.shopping .sectionparint{
+.shopping .sectionparint {
     margin: 3rem;
     display: grid;
     /* grid-template-columns: repeat(auto-fill,minmax(450px,1fr)); */
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    box-shadow: .25rem .25rem .5rem rgba(0, 0, 0, .25);
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
     background-color: white;
     padding: 20px;
     align-items: center;
 }
 
-.shopping .image img{
+.shopping .image img {
     width: 100%;
     display: block;
     height: 100%;
-   
 }
 
 .shopping .productparagraphe {
@@ -60,7 +59,7 @@
     text-align: start;
 }
 
-.shopping .productparagraphe .souka{
+.shopping .productparagraphe .souka {
     display: block;
     width: fit-content;
     margin: auto;
@@ -70,31 +69,30 @@
     margin: 1rem;
 }
 
-.shopping .productparagraphe p{
-    line-height: 3  0px;
+.shopping .productparagraphe p {
+    line-height: 3 0px;
     text-transform: capitalize;
 }
 
-.shopping .walid{
+.shopping .walid {
     font-size: 20px;
-
 }
 
-.shopping .shoppingligne{
+.shopping .shoppingligne {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:white;
-    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    background-color: white;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 2px;
     flex: 1;
     padding: 30px;
     margin: 3rem;
-    box-shadow: .25rem .25rem .5rem rgba(0, 0, 0, .25);
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
     min-height: 450px;
 }
 
-.shopping .printlivraison{
+.shopping .printlivraison {
     display: grid;
     /* grid-template-columns: repeat(auto-fill,minmax(200px,1fr)); */
     grid-template-columns: 1fr 1fr 1fr;
@@ -111,24 +109,24 @@
     margin: auto;
     display: flex;
     justify-content: center;
-    padding: .25rem;
+    padding: 0.25rem;
     background-color: rgb(225, 225, 225);
-    transition: .5s all ease-in-out;
-    border-radius: .5rem;
+    transition: 0.5s all ease-in-out;
+    border-radius: 0.5rem;
 }
 
 .shopping .childe-power {
-    padding: .5rem;
+    padding: 0.5rem;
     margin: 5px;
     width: 200px;
 }
 
 .shopping .childe-power b {
-    padding: .5rem;
+    padding: 0.5rem;
 }
 
 .shopping .printlivraison button:hover {
-    transform: scale(.9) rotateX(5deg) rotateY(-20deg);
+    transform: scale(0.9) rotateX(5deg) rotateY(-20deg);
 }
 
 .childe-power svg {
@@ -166,7 +164,7 @@
     color: black !important;
     text-align: start;
     border: 1px solid black;
-    margin: .5rem auto;
+    margin: 0.5rem auto;
     width: 100%;
 }
 
@@ -174,10 +172,9 @@
     background-color: white !important;
     color: black !important;
     border: 1px solid black;
-    margin: .5rem auto;
+    margin: 0.5rem auto;
 }
 
 .shopping .printlivraison button {
     border: none;
 }
-

@@ -3,12 +3,12 @@ import * as api from '../api';
 // Action Creators
 export const getProducts = () => async (dispatch) => {
     try {
-        const { data } = await api.fetchProducts(); 
+        const { data } = await api.fetchProducts();
         dispatch({ type: 'FETCH_ALL', payload: data });
     } catch (error) {
-        console.log(error)
+        console.log(error);
     }
-}
+};
 
 export const createProduct = (product) => async (dispatch) => {
     try {
@@ -17,4 +17,4 @@ export const createProduct = (product) => async (dispatch) => {
     } catch (error) {
         console.log(error);
     }
-}
+};

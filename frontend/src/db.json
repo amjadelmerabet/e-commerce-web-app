@@ -73,7 +73,7 @@
                 "searchButton": {
                     "id": 2,
                     "label": "Search"
-                } 
+                }
             },
             "navigationMenu": [
                 {
@@ -105,9 +105,7 @@
         }
     },
     "body": {
-        "home": {
-
-        },
+        "home": {},
         "products": {
             "filterTab": {
                 "id": 0,
@@ -401,9 +399,7 @@
                 ]
             }
         },
-        "product": {
-
-        },
+        "product": {},
         "cart": {
             "cart-items": [
                 {

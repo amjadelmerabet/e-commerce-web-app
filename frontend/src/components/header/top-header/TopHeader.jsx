@@ -1,27 +1,23 @@
-import React from "react";
-import { Navbar, Container, Nav, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Navbar, Container, Nav, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
-import SocialMediaLinks from "./social-media-links/SocialMediaLinks";
+import SocialMediaLinks from './social-media-links/SocialMediaLinks';
 
-import Data from "../../../db.json";
+import Data from '../../../db.json';
 
-import Logo from "../../../assets/images/tsd-logo.png";
+import Logo from '../../../assets/images/tsd-logo.png';
 
-import "./TopHeader.css";
-
+import './TopHeader.css';
 
 function TopHeader() {
-
     return (
         <div className="top-header">
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container fluid>
                     <Navbar.Brand href="#home">
                         <img src={Logo} alt="Website Logo"></img>
-                        <span id="app-name">
-                            {Data.appInfos.appName}
-                        </span>
+                        <span id="app-name">{Data.appInfos.appName}</span>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbar-top" />
                     <Navbar.Collapse id="navbar-top">

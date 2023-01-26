@@ -1,8 +1,15 @@
-import React from 'react'
-import { Form, Row, Col, FormControl, FormSelect, Button } from 'react-bootstrap';
-import { AiOutlineSearch } from 'react-icons/ai'
+import React from 'react';
+import {
+    Form,
+    Row,
+    Col,
+    FormControl,
+    FormSelect,
+    Button,
+} from 'react-bootstrap';
+import { AiOutlineSearch } from 'react-icons/ai';
 
-import './GlobalSearch.css'
+import './GlobalSearch.css';
 
 function GLobalSearch(props) {
     return (
@@ -10,26 +17,20 @@ function GLobalSearch(props) {
             <Row>
                 <Col sm={12} md={4}>
                     <FormSelect id="categories" name="categories">
-                        <option>
-                            { props.data.select.default }
-                        </option>
-                        {
-                            props.data.select.options.map((option) => {
-                                return (
-                                    <option key={option.id}>
-                                        {option.label}
-                                    </option>
-                                )
-                            })
-                        }
+                        <option>{props.data.select.default}</option>
+                        {props.data.select.options.map((option) => {
+                            return (
+                                <option key={option.id}>{option.label}</option>
+                            );
+                        })}
                     </FormSelect>
                 </Col>
-                <Col sm={12} md={8} style={{display: 'flex'}}>
+                <Col sm={12} md={8} style={{ display: 'flex' }}>
                     <FormControl
-                    type="search"
-                    placeholder="Search"
-                    className="me-2"
-                    aria-label="Search"
+                        type="search"
+                        placeholder="Search"
+                        className="me-2"
+                        aria-label="Search"
                     />
                     <Button>
                         <AiOutlineSearch className="search-icon" />
@@ -37,7 +38,7 @@ function GLobalSearch(props) {
                 </Col>
             </Row>
         </Form>
-    )
+    );
 }
 
 export default GLobalSearch;

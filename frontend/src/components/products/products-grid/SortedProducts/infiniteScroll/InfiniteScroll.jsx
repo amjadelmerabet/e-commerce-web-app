@@ -1,10 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from 'react';
 import { Row } from 'react-bootstrap';
 
-import './InfiniteScroll.css'
+import './InfiniteScroll.css';
 
 function InfiniteScroll(props) {
-
     const recordsPerPage = 8;
 
     const listRef = useRef(null);
@@ -22,27 +21,33 @@ function InfiniteScroll(props) {
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
-            if(listRef && listRef.current) {
-                if(window.scrollY + window.innerHeight >= listRef.current.offsetTop + listRef.current.offsetHeight) {
+            if (listRef && listRef.current) {
+                if (
+                    window.scrollY + window.innerHeight >=
+                    listRef.current.offsetTop + listRef.current.offsetHeight
+                ) {
                     console.log('You reached the bottom of the page');
                     setLoad(true);
                 }
             }
-        })
-    }, [listRef])
+        });
+    }, [listRef]);
 
     useEffect(() => {
         const getProducts = () => {
-            const pages  = Math.floor(props.products.length / recordsPerPage);
-            const maxIndex = props.products.length % recordsPerPage === 0 ? pages : pages + 1;
+            const pages = Math.floor(props.products.length / recordsPerPage);
+            const maxIndex =
+                props.products.length % recordsPerPage === 0
+                    ? pages
+                    : pages + 1;
 
-            if(load && index <= maxIndex) {
+            if (load && index <= maxIndex) {
                 const start = recordsPerPage * index;
                 const end = start + recordsPerPage;
                 setData(data.concat(props.products.slice(start, end)));
                 setIndex(index + 1);
             }
-        }
+        };
         getProducts();
         setLoad(false);
     }, [load, index, data, props.products]);
@@ -51,7 +56,23 @@ function InfiniteScroll(props) {
         <Row className="inifiniteScroll" ref={listRef}>
             {
                 // products.slice(props.data.page, props.data.page + 8).map((product) => {
-                props.data.productName === '' ? data.map(product => props.data.filterByCategory(product, props.data.category)) : props.products.map(product => product.name.toLowerCase().includes(props.data.productName.toLowerCase()) ? props.data.filterByCategory(product, props.data.category) : null)
+                props.data.productName === ''
+                    ? data.map((product) =>
+                          props.data.filterByCategory(
+                              product,
+                              props.data.category
+                          )
+                      )
+                    : props.products.map((product) =>
+                          product.name
+                              .toLowerCase()
+                              .includes(props.data.productName.toLowerCase())
+                              ? props.data.filterByCategory(
+                                    product,
+                                    props.data.category
+                                )
+                              : null
+                      )
                 // data.map((product) => {
                 //     if(props.data.productName === '') {
                 //         return (

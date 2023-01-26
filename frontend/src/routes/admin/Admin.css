@@ -24,7 +24,7 @@
 .admin form .form-label {
     color: white;
     margin-top: 1rem;
-    margin-left: .5rem;
+    margin-left: 0.5rem;
     font-size: 1.125rem;
 }
 
@@ -39,12 +39,12 @@
     text-transform: uppercase;
     background-color: var(--my-green);
     border: 1px solid var(--my-green);
-    transition: .25s all ease-in-out;
+    transition: 0.25s all ease-in-out;
 }
 
 .admin form > button:hover,
 .admin form > button:focus {
-    transform: scale(.98);
+    transform: scale(0.98);
     background-color: var(--my-dark-green);
     border: 1px solid var(--my-dark-green);
     box-shadow: none;
@@ -52,6 +52,6 @@
 }
 
 .admin .file-input input {
-    margin: .5rem 0;
+    margin: 0.5rem 0;
     color: white;
 }

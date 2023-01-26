@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import './Descri.css'
+import './Descri.css';
 
 function Descri() {
     return (
@@ -15,7 +15,7 @@ function Descri() {
                                 what will.This was the very best explanation of
                                 frameworks for brginners that I've ever seen.
                             </p>
-                            <img src="https://i.imgur.com/lE89Aey.jpg"alt="" />
+                            <img src="https://i.imgur.com/lE89Aey.jpg" alt="" />
                             <div id="image-caption">Nick Doe</div>
                         </div>
                     </div>
@@ -28,7 +28,8 @@ function Descri() {
                                 frameworks for brginners that I've ever seen.
                             </p>
                             <img
-                                src="https://i.imgur.com/QptVdsp.jpg"alt=""
+                                src="https://i.imgur.com/QptVdsp.jpg"
+                                alt=""
                                 className="img-fluid"
                             />
                             <div id="image-caption">Cromption Greves</div>
@@ -43,17 +44,26 @@ function Descri() {
                                 frameworks for brginners that I've ever seen.
                             </p>
                             <img
-                                src="https://i.imgur.com/jQWThIn.jpg"alt=""
+                                src="https://i.imgur.com/jQWThIn.jpg"
+                                alt=""
                                 className="img-fluid"
                             />
                             <div id="image-caption">Harry Mon</div>
                         </div>
                     </div>
                 </div>
-                <a className="carousel-control-prev" href="https://reactjs.org" data-slide="prev">
+                <a
+                    className="carousel-control-prev"
+                    href="https://reactjs.org"
+                    data-slide="prev"
+                >
                     <i className="fas fa-arrow-left"></i>
                 </a>
-                <a className="carousel-control-next" href="https://reactjs.org" data-slide="next">
+                <a
+                    className="carousel-control-next"
+                    href="https://reactjs.org"
+                    data-slide="next"
+                >
                     <i className="fas fa-arrow-right"></i>
                 </a>
             </div>

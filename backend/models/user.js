@@ -1,4 +1,4 @@
-import mongoose from 'mongoose'
+import mongoose from 'mongoose';
 
 const userSchema = mongoose.Schema({
     firstName: String,
@@ -8,10 +8,10 @@ const userSchema = mongoose.Schema({
     password: String,
     createdAt: {
         type: Date,
-        default: new Date()
-    }
-})
+        default: new Date(),
+    },
+});
 
-const User = mongoose.model('User', userSchema)
+const User = mongoose.model('User', userSchema);
 
-export default User
+export default User;

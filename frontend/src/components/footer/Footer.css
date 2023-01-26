@@ -5,7 +5,7 @@
 .footer h5 {
     color: rgb(45, 180, 120);
     font-weight: 550;
-    text-shadow: 2.5px 2.5px 10px rgba(255, 255, 255, .25);
+    text-shadow: 2.5px 2.5px 10px rgba(255, 255, 255, 0.25);
 }
 
 .footer .col-12 {
@@ -46,5 +46,5 @@
 
 .footer .footer-paragraph {
     margin: 1.5rem;
-    color: white;    
+    color: white;
 }

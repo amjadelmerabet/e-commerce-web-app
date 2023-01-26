@@ -1,14 +1,13 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import "./Contact.css";
-
+import './Contact.css';
 
 function Contact() {
     return (
         <div className="contact">
             <div className="d-flex justify-content-center align-items-center mt-5">
-                <Link to='/contact'>
+                <Link to="/contact">
                     <button className="btnn">Contact us</button>
                 </Link>
             </div>

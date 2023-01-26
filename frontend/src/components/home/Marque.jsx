@@ -1,7 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import "./Marque.css";
-
+import './Marque.css';
 
 function marque() {
     return (

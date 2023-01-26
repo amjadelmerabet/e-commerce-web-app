@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
 // import pc from "./img/pc.jpg";
-import "./Catg.css";
+import './Catg.css';
 
 function Barre() {
     return (

@@ -23,14 +23,14 @@
     background-color: var(--my-blue);
     color: white;
     /* box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, .25); */
-    transition: .25s all ease-in-out;
+    transition: 0.25s all ease-in-out;
 }
 
 .bottom-header form .form-select:hover,
 .bottom-header form .form-select:focus {
     border: none;
     /* box-shadow: 0 0 5px rgba(0, 0, 0, .25); */
-    transform: scale(.95);
+    transform: scale(0.95);
 }
 
 .bottom-header form option {
@@ -48,7 +48,7 @@
     color: black;
     font-weight: 500;
 }
-   
+
 .bottom-header form input {
     width: 65%;
     border-radius: 25px;
@@ -56,7 +56,7 @@
     background: var(--my-blue);
     margin-inline: 1.25rem;
     outline: none;
-    transition: .5s all ease-in-out;
+    transition: 0.5s all ease-in-out;
     /* box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, .25); */
 }
 
@@ -79,14 +79,14 @@
     border-radius: 25px;
     background-color: var(--my-green);
     border: none;
-    box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, .25);
-    transition: .25s all ease-in-out;
+    box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.25);
+    transition: 0.25s all ease-in-out;
 }
 
 .bottom-header form button:hover,
 .bottom-header form button:focus {
     background-color: var(--my-dark-green);
-    transform: scale(.95);
+    transform: scale(0.95);
 }
 
 .bottom-header .navigation-menu {
@@ -125,14 +125,14 @@
     font-weight: 550;
     display: flex;
     background-color: var(--my-green);
-    transition: .25s all ease-in-out;
-    box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, .25);
+    transition: 0.25s all ease-in-out;
+    box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.25);
 }
 
 .bottom-header .shopping-menu button:hover,
 .bottom-header .shopping-menu button:focus {
     background-color: var(--my-dark-green);
-    transform: scale(.95);
+    transform: scale(0.95);
 }
 
 .bottom-header .shopping-menu button a:link,
@@ -143,28 +143,28 @@
 @media (max-width: 575.99px) {
     .bottom-header .shopping-menu button {
         justify-content: center;
-        margin: .5rem 0;
+        margin: 0.5rem 0;
     }
     .bottom-header form {
-        margin: .25rem 0;
+        margin: 0.25rem 0;
     }
     .bottom-header form input {
-        margin: .25rem 0;
+        margin: 0.25rem 0;
     }
 
     .bottom-header form button {
-        margin: .25rem 0;
+        margin: 0.25rem 0;
     }
     .bottom-header form .form-select {
         width: 100%;
-        margin: .5rem 0;
+        margin: 0.5rem 0;
     }
     .bottom-header .navigation-menu .nav-item {
-        padding: .25rem 0;
+        padding: 0.25rem 0;
     }
 }
 
-.bottom-header button[aria-label="Toggle navigation"] {
+.bottom-header button[aria-label='Toggle navigation'] {
     color: white;
 }
 
@@ -192,11 +192,24 @@
 }
 
 @media (max-width: 575.99px) {
-    .bottom-header > .navbar > .container-fluid > .navbar-collapse > .row > .col-sm-12 {
+    .bottom-header
+        > .navbar
+        > .container-fluid
+        > .navbar-collapse
+        > .row
+        > .col-sm-12 {
         margin: 5px auto;
     }
-    
-    .bottom-header > .navbar > .container-fluid > .navbar-collapse > .row > .col-sm-12 > .d-flex > .row .col-sm-12 {
+
+    .bottom-header
+        > .navbar
+        > .container-fluid
+        > .navbar-collapse
+        > .row
+        > .col-sm-12
+        > .d-flex
+        > .row
+        .col-sm-12 {
         margin: 5px auto;
         justify-content: center;
     }
@@ -219,10 +232,14 @@
     .bottom-header {
         height: 65px;
     }
-    .bottom-header > .navbar > .container-fluid > .navbar-collapse > .row > .col-sm-12 {
+    .bottom-header
+        > .navbar
+        > .container-fluid
+        > .navbar-collapse
+        > .row
+        > .col-sm-12 {
         display: flex;
     }
-    
 }
 
 .bottom-header a:link {

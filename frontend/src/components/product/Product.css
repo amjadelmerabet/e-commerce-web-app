@@ -3,21 +3,21 @@
     width: 80%;
     height: 400px;
     margin: auto;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
 }
 
 .product .hstack span {
     font-size: 1rem;
     color: rgb(245, 245, 245);
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     font-weight: 450;
 }
 
 .product .related-product {
     height: 250px;
-    aspect-ratio: 1 / .5;
+    aspect-ratio: 1 / 0.5;
     margin: 1rem auto;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     background-color: var(--my-green);
 }
 
@@ -42,7 +42,7 @@
 }
 
 .product .carousel-caption .prices h4 {
-    margin-inline: .5rem;
+    margin-inline: 0.5rem;
 }
 
 .product .carousel-caption .prices .old-price {
@@ -70,7 +70,7 @@
     background-color: var(--my-dark-green);
     font-weight: 550;
     color: white;
-    transition: .25s all ease-in-out;
+    transition: 0.25s all ease-in-out;
     width: 100px;
 }
 
@@ -91,7 +91,7 @@
     padding: 1rem;
     color: black !important;
     border-radius: 1rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
     text-align: start;
 }
 

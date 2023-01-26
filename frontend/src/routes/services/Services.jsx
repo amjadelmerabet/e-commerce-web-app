@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { Col, Container, Row } from 'react-bootstrap';
 import { FaPhone, FaShopify, FaShuttleVan, FaImages } from 'react-icons/fa';
 
-import img1 from "../../assets/images/livraison.jpg";
+import img1 from '../../assets/images/livraison.jpg';
 
-import "./Services.css";
+import './Services.css';
 class Services extends Component {
     render() {
         return (
@@ -30,11 +30,15 @@ class Services extends Component {
                                     <FaPhone />
                                     {/* <i className="fas fa-phone f"></i> */}
                                     <div className="e">
-                                        <b>ENJOY A SIMPLE RETURN AND REFUND POLICY</b>
+                                        <b>
+                                            ENJOY A SIMPLE RETURN AND REFUND
+                                            POLICY
+                                        </b>
                                         <p>
-                                            Choose the number of items to return and the
-                                            reason for the return + additional information
-                                            to facilitate the procedure
+                                            Choose the number of items to return
+                                            and the reason for the return +
+                                            additional information to facilitate
+                                            the procedure
                                         </p>
                                     </div>
                                 </div>
@@ -44,11 +48,15 @@ class Services extends Component {
                                     <FaShopify />
                                     {/* <i className="fab fa-shopify f"></i> */}
                                     <div className="e">
-                                        <b>REPORT THE ARTICLE OR REQUEST ITS RECOVERY</b>
+                                        <b>
+                                            REPORT THE ARTICLE OR REQUEST ITS
+                                            RECOVERY
+                                        </b>
                                         <p>
-                                            Drop off the complete package at one of our
-                                            approved pick-up points or arrange for our
-                                            agents to collect it from you.
+                                            Drop off the complete package at one
+                                            of our approved pick-up points or
+                                            arrange for our agents to collect it
+                                            from you.
                                         </p>
                                     </div>
                                 </div>
@@ -60,9 +68,10 @@ class Services extends Component {
                                     <div className="e">
                                         <b>PREPARE THE ARTICLE</b>
                                         <p>
-                                            Return the item to its original packaging,
-                                            including any accessories (coupons, gadgets,
-                                            etc.) that were delivered with it.
+                                            Return the item to its original
+                                            packaging, including any accessories
+                                            (coupons, gadgets, etc.) that were
+                                            delivered with it.
                                         </p>
                                     </div>
                                 </div>
@@ -74,9 +83,10 @@ class Services extends Component {
                                     <div className="e">
                                         <b>REPAYMENT</b>
                                         <p>
-                                            Once your package has been re-routed, we will
-                                            carry out a final check after which your refund
-                                            could be made using your preferred refund
+                                            Once your package has been
+                                            re-routed, we will carry out a final
+                                            check after which your refund could
+                                            be made using your preferred refund
                                             method.
                                         </p>
                                     </div>

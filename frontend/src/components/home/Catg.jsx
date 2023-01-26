@@ -1,16 +1,15 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { Button } from "react-bootstrap";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
 // import GAF from "./img/GAF.webp";
-import IN from "./img/IN.jpg";
-import MO from "./img/MO.jpg";
-import VI from "./img/VI.jpg";
-import CH from "./img/CH.jpg";
-import AC from "./img/AC.jpg";
+import IN from './img/IN.jpg';
+import MO from './img/MO.jpg';
+import VI from './img/VI.jpg';
+import CH from './img/CH.jpg';
+import AC from './img/AC.jpg';
 
-import "./Catg.css";
-
+import './Catg.css';
 
 function Catg() {
     return (
@@ -30,10 +29,16 @@ function Catg() {
                         <div className="col-12 col-md-6 col-lg-4">
                             <div className="item">
                                 <h4 className="py-2">IT</h4>
-                                <img src={IN} alt="camera" className="img-fluid" />
+                                <img
+                                    src={IN}
+                                    alt="camera"
+                                    className="img-fluid"
+                                />
                                 <div className="overlay d-flex align-items-center justify-content-center">
-                                    <Link to='/products/IT'>
-                                        <Button variant={'success'}>View Details</Button>
+                                    <Link to="/products/IT">
+                                        <Button variant={'success'}>
+                                            View Details
+                                        </Button>
                                     </Link>
                                 </div>
                             </div>
@@ -41,10 +46,16 @@ function Catg() {
                         <div className="col-12 col-md-6 col-lg-4">
                             <div className="item">
                                 <h4 className="py-2">Clothes</h4>
-                                <img src={VI} alt="camera" className="img-fluid" />
+                                <img
+                                    src={VI}
+                                    alt="camera"
+                                    className="img-fluid"
+                                />
                                 <div className="overlay d-flex align-items-center justify-content-center">
-                                    <Link to='/products/Pants'>
-                                        <Button variant={'success'}>View Details</Button>
+                                    <Link to="/products/Pants">
+                                        <Button variant={'success'}>
+                                            View Details
+                                        </Button>
                                     </Link>
                                 </div>
                             </div>
@@ -58,8 +69,10 @@ function Catg() {
                                     className="img-fluid"
                                 />
                                 <div className="overlay d-flex align-items-center justify-content-center">
-                                    <Link to='/products/Mobile'>
-                                        <Button variant={'success'}>View Details</Button>
+                                    <Link to="/products/Mobile">
+                                        <Button variant={'success'}>
+                                            View Details
+                                        </Button>
                                     </Link>
                                 </div>
                             </div>
@@ -67,10 +80,16 @@ function Catg() {
                         <div className="col-12 col-md-6 col-lg-4">
                             <div className="item">
                                 <h4 className="py-2">Shoes</h4>
-                                <img src={CH} alt="camera" className="img-fluid" />
+                                <img
+                                    src={CH}
+                                    alt="camera"
+                                    className="img-fluid"
+                                />
                                 <div className="overlay d-flex align-items-center justify-content-center">
-                                    <Link to='/products/Shoes'>
-                                        <Button variant={'success'}>View Details</Button>
+                                    <Link to="/products/Shoes">
+                                        <Button variant={'success'}>
+                                            View Details
+                                        </Button>
                                     </Link>
                                 </div>
                             </div>
@@ -84,8 +103,10 @@ function Catg() {
                                     className="img-fluid"
                                 />
                                 <div className="overlay d-flex align-items-center justify-content-center">
-                                    <Link to='/products/Accessories'>
-                                        <Button variant={'success'}>View Details</Button>
+                                    <Link to="/products/Accessories">
+                                        <Button variant={'success'}>
+                                            View Details
+                                        </Button>
                                     </Link>
                                 </div>
                             </div>
@@ -93,10 +114,16 @@ function Catg() {
                         <div className="col-12 col-md-6 col-lg-4">
                             <div className="item">
                                 <h4 className="py-2">Beauty</h4>
-                                <img src={VI} alt="camera" className="img-fluid" />
+                                <img
+                                    src={VI}
+                                    alt="camera"
+                                    className="img-fluid"
+                                />
                                 <div className="overlay d-flex align-items-center justify-content-center">
-                                    <Link to='/products/Beauty'>
-                                        <Button variant={'success'}>View Details</Button>
+                                    <Link to="/products/Beauty">
+                                        <Button variant={'success'}>
+                                            View Details
+                                        </Button>
                                     </Link>
                                 </div>
                             </div>

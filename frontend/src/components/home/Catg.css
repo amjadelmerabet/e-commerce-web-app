@@ -23,7 +23,7 @@ body {
     position: relative;
     height: 300px;
     border-radius: 10px;
-    transition: .45s all ease-in-out;
+    transition: 0.45s all ease-in-out;
 }
 
 .catalog .item:hover {
@@ -43,7 +43,7 @@ body {
     margin: 0 auto;
     display: inherit;
     width: 230px;
-    height: 164px
+    height: 164px;
 }
 
 .catalog .overlay {
@@ -54,35 +54,41 @@ body {
     right: 0;
     background: rgba(255, 255, 255, 0.92);
     opacity: 0;
-    -webkit-transition: all .3s;
-    transition: all .5s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.5s;
 }
 
 .catalog .overlay a {
     -webkit-transform: translateY(20px);
     transform: translateY(20px);
     -webkit-transition: all 0.5s;
-    transition: all 0.5s
+    transition: all 0.5s;
 }
 
 .catalog .btn {
     font-weight: 400;
     border: 1px solid transparent;
-    padding: .375rem .75rem;
+    padding: 0.375rem 0.75rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: .25rem;
-    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
+    border-radius: 0.25rem;
+    -webkit-transition: color 0.15s ease-in-out,
+        background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+        -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+        -webkit-box-shadow 0.15s ease-in-out;
 }
 
 .catalog .btn-dark {
     border-radius: 50px !important;
     padding-left: 30px !important;
     padding-right: 30px !important;
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
 
 .catalog .btn-unique {
@@ -90,7 +96,7 @@ body {
     border-color: #ff6b6b; */
     background-color: var(--my-dark-green);
     border: var(--my-dark-green);
-    color: #fff
+    color: #fff;
 }
 
 .catalog .btn-unique:hover {
@@ -105,7 +111,7 @@ body {
 .catalog .item:hover .overlay a {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    color: #fff
+    color: #fff;
 }
 
 .catalog .text h2 {
@@ -116,12 +122,12 @@ body {
     font-size: 3rem;
 }
 
-.barre h3{
+.barre h3 {
     font-size: 1.5rem;
     color: rgb(244, 23, 23);
-    padding: .5rem;
+    padding: 0.5rem;
     background-color: #cddae7;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     margin: auto;
     width: 180px;
     margin: 2rem auto;
@@ -148,21 +154,20 @@ body {
     font-weight: 500;
     padding: 1rem;
     margin: 1rem auto;
-    transition: .25s all ease-in-out;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, .25);
+    transition: 0.25s all ease-in-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
 }
 
 .catalog .btnn:hover {
-    transform: scale(.95);
+    transform: scale(0.95);
 }
 
 .catalog .text {
     font-size: 2.25rem;
     font-weight: bold;
-    margin: .5rem auto;
+    margin: 0.5rem auto;
     color: var(--my-green);
     /* color: #ff6b6b; */
-    
 }
 
 @media (max-width: 768px) {
@@ -180,19 +185,19 @@ body {
     border: none;
     font-size: 26px;
     border-radius: 0 25px;
-    background-image: linear-gradient(to right top, #FB0712, #b3b6be);
+    background-image: linear-gradient(to right top, #fb0712, #b3b6be);
     cursor: pointer;
     color: #fff;
-    transition: all 0.5s
+    transition: all 0.5s;
 }
 
 .catalog .btnn :hover {
     height: 80px;
     width: 400px;
     border: none;
-    
+
     border-radius: 25px 0;
-    background-image: linear-gradient(to right top, #FB0712, #cdcfd5);
+    background-image: linear-gradient(to right top, #fb0712, #cdcfd5);
     cursor: pointer;
-    color: #fff
+    color: #fff;
 }

@@ -16,11 +16,11 @@
 }
 
 .product-card-container button {
-    transition: .25s all ease-in-out;
+    transition: 0.25s all ease-in-out;
 }
 
 .product-card-container button:hover {
-    transform: scale(.9);
+    transform: scale(0.9);
 }
 
 .product-price {
